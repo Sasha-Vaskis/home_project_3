@@ -15,8 +15,11 @@ if wood_hvoy == "да":
     price += num * 8
 
 woter = input('Есть ли водоем?')
-if woter == "да":
-    v_woter = int(input('Каков его объем (Кубометры)?'))
-    price += 60+(4 if v_woter > 20 else 6)
 
+if woter == "да":
+   v_woter = int(input('Каков его объем (Кубометры)?'))
+if v_woter < 20:
+    price += 60 + (6*v_woter)
+else:
+    price += 60 + (4 * v_woter)
 print('Наши услуги будут стоить:', price)
