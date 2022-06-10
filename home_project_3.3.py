@@ -8,7 +8,9 @@ while True:
         tab.append(data)
         continue
     else:
-        sklad = tab.pop()
-        print('Возьмите вот вам',sklad)
-        print('всего хорошего')
+        if tab:
+            sklad = tab.pop()
+            print('Возьмите вот вам', sklad)
+        else:
+            print('Зайдите позже')
 
