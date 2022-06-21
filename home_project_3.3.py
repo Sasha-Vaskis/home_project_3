@@ -6,6 +6,7 @@ while True:
         break
     if data:
         tab.append(data)
+        print(tab)
         continue
     else:
         if tab:
